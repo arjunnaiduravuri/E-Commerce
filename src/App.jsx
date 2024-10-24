@@ -14,7 +14,7 @@ function App() {
 
   return (
     <div className='home'>
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
     <Routes>
       <Route path='/' element={<Fakestore/>}/>
       <Route path='/cartitems' element={<Cartitems/>}/>
